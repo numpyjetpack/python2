@@ -1,0 +1,37 @@
+class Employee:
+    def __init__(self, first_name, last_name, emp_number):
+        self._first_name = first_name
+        self._last_name = last_name
+        self._emp_number = emp_number
+
+    #getters
+    @property
+    def first_name(self):
+        return self._first_name
+    
+    @property
+    def last_name(self):
+        return self._last_name
+    
+    @property
+    def emp_number(self):
+        return self._emp_number
+    
+    #setters
+    @first_name.setter
+    def first_name(self, newName):
+        self._first_name = newName
+    
+    @last_name.setter
+    def last_name(self, newName):
+        self._last_name = newName
+    
+    @emp_number.setter
+    def emp_number(self, newNumber):
+        self._emp_number = newNumber
+
+
+
+emp1 = Employee("Jane", "Tan", "M0123")
+emp2 = Employee("Andy", "Ng", "M0456")
+emp3 = Employee("Xiao Ming", "Lim", "M0789")
